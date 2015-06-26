@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_HexColors 2
 #define COCOAPODS_VERSION_PATCH_HexColors 1
 
+// MagicalRecord
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord 3
+#define COCOAPODS_VERSION_PATCH_MagicalRecord 0
+
 // TSMessages
 #define COCOAPODS_POD_AVAILABLE_TSMessages
 #define COCOAPODS_VERSION_MAJOR_TSMessages 0

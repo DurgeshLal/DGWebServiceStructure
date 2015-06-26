@@ -10,8 +10,6 @@
 		25E40C4D1B3DA9DB0018A43F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C4C1B3DA9DB0018A43F /* main.m */; };
 		25E40C501B3DA9DB0018A43F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C4F1B3DA9DB0018A43F /* AppDelegate.m */; };
 		25E40C531B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C511B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodeld */; };
-		25E40C561B3DA9DB0018A43F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C551B3DA9DB0018A43F /* MasterViewController.m */; };
-		25E40C591B3DA9DC0018A43F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C581B3DA9DC0018A43F /* DetailViewController.m */; };
 		25E40C5C1B3DA9DC0018A43F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E40C5A1B3DA9DC0018A43F /* Main.storyboard */; };
 		25E40C5E1B3DA9DC0018A43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E40C5D1B3DA9DC0018A43F /* Assets.xcassets */; };
 		25E40C611B3DA9DC0018A43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E40C5F1B3DA9DC0018A43F /* LaunchScreen.storyboard */; };
@@ -43,10 +41,6 @@
 		25E40C4E1B3DA9DB0018A43F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25E40C4F1B3DA9DB0018A43F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25E40C521B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DLWebServiceStructure.xcdatamodel; sourceTree = "<group>"; };
-		25E40C541B3DA9DB0018A43F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		25E40C551B3DA9DB0018A43F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		25E40C571B3DA9DB0018A43F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		25E40C581B3DA9DC0018A43F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		25E40C5B1B3DA9DC0018A43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E40C5D1B3DA9DC0018A43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E40C601B3DA9DC0018A43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,10 +117,6 @@
 			children = (
 				25E40C4E1B3DA9DB0018A43F /* AppDelegate.h */,
 				25E40C4F1B3DA9DB0018A43F /* AppDelegate.m */,
-				25E40C541B3DA9DB0018A43F /* MasterViewController.h */,
-				25E40C551B3DA9DB0018A43F /* MasterViewController.m */,
-				25E40C571B3DA9DB0018A43F /* DetailViewController.h */,
-				25E40C581B3DA9DC0018A43F /* DetailViewController.m */,
 				25E40C5A1B3DA9DC0018A43F /* Main.storyboard */,
 				25E40C5D1B3DA9DC0018A43F /* Assets.xcassets */,
 				25E40C5F1B3DA9DC0018A43F /* LaunchScreen.storyboard */,
@@ -337,8 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25E40C591B3DA9DC0018A43F /* DetailViewController.m in Sources */,
-				25E40C561B3DA9DB0018A43F /* MasterViewController.m in Sources */,
 				25E40C531B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodeld in Sources */,
 				25E40C501B3DA9DB0018A43F /* AppDelegate.m in Sources */,
 				25E40C4D1B3DA9DB0018A43F /* main.m in Sources */,

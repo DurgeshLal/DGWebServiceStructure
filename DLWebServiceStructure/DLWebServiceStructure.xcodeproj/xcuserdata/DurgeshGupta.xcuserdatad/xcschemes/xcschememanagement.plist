@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TargetOne.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,21 @@
 			<true/>
 		</dict>
 		<key>25E40C711B3DA9DC0018A43F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA6FEDB41B3F05B100266C32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA6FEDCC1B3F05B100266C32</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA6FEDD71B3F05B100266C32</key>
 		<dict>
 			<key>primary</key>
 			<true/>

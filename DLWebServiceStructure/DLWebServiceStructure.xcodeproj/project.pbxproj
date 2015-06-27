@@ -16,6 +16,12 @@
 		25E40C6C1B3DA9DC0018A43F /* DLWebServiceStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C6B1B3DA9DC0018A43F /* DLWebServiceStructureTests.m */; };
 		25E40C771B3DA9DC0018A43F /* DLWebServiceStructureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E40C761B3DA9DC0018A43F /* DLWebServiceStructureUITests.m */; };
 		3CEF4B7C4CF0407602AA0FDA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B6B6599C03895497E47E13 /* libPods.a */; };
+		EA6FED981B3EFCAF00266C32 /* DGDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FED971B3EFCAF00266C32 /* DGDataManager.m */; };
+		EA6FED9C1B3EFCD800266C32 /* DGRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FED9B1B3EFCD800266C32 /* DGRequestBuilder.m */; };
+		EA6FEDA01B3EFD0600266C32 /* DGRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FED9F1B3EFD0600266C32 /* DGRequestManager.m */; };
+		EA6FEDA41B3EFD3D00266C32 /* DGSystemConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FEDA31B3EFD3D00266C32 /* DGSystemConfiguration.m */; };
+		EA6FEDA81B3EFD9E00266C32 /* DGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FEDA71B3EFD9E00266C32 /* DGUtility.m */; };
+		EA6FEDAE1B3EFF1500266C32 /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6FEDAD1B3EFF1500266C32 /* configuration.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		25E40C781B3DA9DC0018A43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B6B6599C03895497E47E13 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B24E15924C9F2DDA627C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EA6FED961B3EFCAF00266C32 /* DGDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGDataManager.h; path = DataManager/DGDataManager.h; sourceTree = "<group>"; };
+		EA6FED971B3EFCAF00266C32 /* DGDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGDataManager.m; path = DataManager/DGDataManager.m; sourceTree = "<group>"; };
+		EA6FED9A1B3EFCD800266C32 /* DGRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGRequestBuilder.h; path = RequestBuilder/DGRequestBuilder.h; sourceTree = "<group>"; };
+		EA6FED9B1B3EFCD800266C32 /* DGRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGRequestBuilder.m; path = RequestBuilder/DGRequestBuilder.m; sourceTree = "<group>"; };
+		EA6FED9E1B3EFD0600266C32 /* DGRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGRequestManager.h; path = RequestManager/DGRequestManager.h; sourceTree = "<group>"; };
+		EA6FED9F1B3EFD0600266C32 /* DGRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGRequestManager.m; path = RequestManager/DGRequestManager.m; sourceTree = "<group>"; };
+		EA6FEDA21B3EFD3D00266C32 /* DGSystemConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGSystemConfiguration.h; path = SystemConfiguration/DGSystemConfiguration.h; sourceTree = "<group>"; };
+		EA6FEDA31B3EFD3D00266C32 /* DGSystemConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGSystemConfiguration.m; path = SystemConfiguration/DGSystemConfiguration.m; sourceTree = "<group>"; };
+		EA6FEDA61B3EFD9E00266C32 /* DGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGUtility.h; path = Utility/DGUtility.h; sourceTree = "<group>"; };
+		EA6FEDA71B3EFD9E00266C32 /* DGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGUtility.m; path = Utility/DGUtility.m; sourceTree = "<group>"; };
+		EA6FEDAA1B3EFDE300266C32 /* DGConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGConstant.h; path = Utility/DGConstant.h; sourceTree = "<group>"; };
+		EA6FEDAD1B3EFF1500266C32 /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = configuration.plist; path = Targets/TargetOne/configuration.plist; sourceTree = "<group>"; };
 		F4562E682679A165A210D67A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +133,12 @@
 		25E40C4A1B3DA9DB0018A43F /* DLWebServiceStructure */ = {
 			isa = PBXGroup;
 			children = (
+				EA6FEDAF1B3EFF2300266C32 /* Targets */,
+				EA6FEDA91B3EFDB400266C32 /* Utility */,
+				EA6FEDA51B3EFD4700266C32 /* SystemConfiguration */,
+				EA6FEDA11B3EFD0E00266C32 /* RequestManager */,
+				EA6FED9D1B3EFCE000266C32 /* RequestBuilder */,
+				EA6FED991B3EFCB700266C32 /* DataManager */,
 				25E40C4E1B3DA9DB0018A43F /* AppDelegate.h */,
 				25E40C4F1B3DA9DB0018A43F /* AppDelegate.m */,
 				25E40C5A1B3DA9DC0018A43F /* Main.storyboard */,
@@ -160,6 +184,68 @@
 				BB2B24E15924C9F2DDA627C8 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA6FED991B3EFCB700266C32 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FED961B3EFCAF00266C32 /* DGDataManager.h */,
+				EA6FED971B3EFCAF00266C32 /* DGDataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		EA6FED9D1B3EFCE000266C32 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FED9A1B3EFCD800266C32 /* DGRequestBuilder.h */,
+				EA6FED9B1B3EFCD800266C32 /* DGRequestBuilder.m */,
+			);
+			name = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		EA6FEDA11B3EFD0E00266C32 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FED9E1B3EFD0600266C32 /* DGRequestManager.h */,
+				EA6FED9F1B3EFD0600266C32 /* DGRequestManager.m */,
+			);
+			name = RequestManager;
+			sourceTree = "<group>";
+		};
+		EA6FEDA51B3EFD4700266C32 /* SystemConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FEDA21B3EFD3D00266C32 /* DGSystemConfiguration.h */,
+				EA6FEDA31B3EFD3D00266C32 /* DGSystemConfiguration.m */,
+			);
+			name = SystemConfiguration;
+			sourceTree = "<group>";
+		};
+		EA6FEDA91B3EFDB400266C32 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FEDA61B3EFD9E00266C32 /* DGUtility.h */,
+				EA6FEDA71B3EFD9E00266C32 /* DGUtility.m */,
+				EA6FEDAA1B3EFDE300266C32 /* DGConstant.h */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		EA6FEDAF1B3EFF2300266C32 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FEDB01B3EFF2F00266C32 /* TargetOne */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		EA6FEDB01B3EFF2F00266C32 /* TargetOne */ = {
+			isa = PBXGroup;
+			children = (
+				EA6FEDAD1B3EFF1500266C32 /* configuration.plist */,
+			);
+			name = TargetOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +317,7 @@
 				TargetAttributes = {
 					25E40C471B3DA9DB0018A43F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HAU4M4XJ7Y;
 					};
 					25E40C661B3DA9DC0018A43F = {
 						CreatedOnToolsVersion = 7.0;
@@ -268,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25E40C611B3DA9DC0018A43F /* LaunchScreen.storyboard in Resources */,
+				EA6FEDAE1B3EFF1500266C32 /* configuration.plist in Resources */,
 				25E40C5E1B3DA9DC0018A43F /* Assets.xcassets in Resources */,
 				25E40C5C1B3DA9DC0018A43F /* Main.storyboard in Resources */,
 			);
@@ -329,6 +417,11 @@
 			files = (
 				25E40C531B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodeld in Sources */,
 				25E40C501B3DA9DB0018A43F /* AppDelegate.m in Sources */,
+				EA6FED9C1B3EFCD800266C32 /* DGRequestBuilder.m in Sources */,
+				EA6FED981B3EFCAF00266C32 /* DGDataManager.m in Sources */,
+				EA6FEDA41B3EFD3D00266C32 /* DGSystemConfiguration.m in Sources */,
+				EA6FEDA81B3EFD9E00266C32 /* DGUtility.m in Sources */,
+				EA6FEDA01B3EFD0600266C32 /* DGRequestManager.m in Sources */,
 				25E40C4D1B3DA9DB0018A43F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +564,7 @@
 			baseConfigurationReference = F4562E682679A165A210D67A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DLWebServiceStructure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.workspace.DLWebServiceStructure;
@@ -483,6 +577,7 @@
 			baseConfigurationReference = BB2B24E15924C9F2DDA627C8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DLWebServiceStructure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.durgesh.workspace.DLWebServiceStructure;

@@ -10,4 +10,7 @@
 
 @interface DGConstant : NSObject
 
+//http://www.raywenderlich.com/demos/weather_sample/weather.php?format=json
+
+
 @end

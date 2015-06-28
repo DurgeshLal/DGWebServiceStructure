@@ -22,6 +22,8 @@
 		EA6FEDA41B3EFD3D00266C32 /* DGSystemConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FEDA31B3EFD3D00266C32 /* DGSystemConfiguration.m */; };
 		EA6FEDA81B3EFD9E00266C32 /* DGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6FEDA71B3EFD9E00266C32 /* DGUtility.m */; };
 		EA6FEDAE1B3EFF1500266C32 /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA6FEDAD1B3EFF1500266C32 /* configuration.plist */; };
+		EAD25C1D1B4096DD00A8975C /* DGDashBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD25C1C1B4096DD00A8975C /* DGDashBoardViewController.m */; };
+		EAD25C221B40998700A8975C /* DGDashBoardTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD25C211B40998700A8975C /* DGDashBoardTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,11 @@
 		EA6FEDA71B3EFD9E00266C32 /* DGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGUtility.m; path = Utility/DGUtility.m; sourceTree = "<group>"; };
 		EA6FEDAA1B3EFDE300266C32 /* DGConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGConstant.h; path = Utility/DGConstant.h; sourceTree = "<group>"; };
 		EA6FEDAD1B3EFF1500266C32 /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = configuration.plist; path = Targets/TargetOne/configuration.plist; sourceTree = "<group>"; };
+		EAD25C141B40943000A8975C /* DLWebServiceStructure copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DLWebServiceStructure copy-Info.plist"; path = "/Users/DurgeshGupta/Desktop/DGWebServiceStructure/DLWebServiceStructure/DLWebServiceStructure copy-Info.plist"; sourceTree = "<absolute>"; };
+		EAD25C1B1B4096DD00A8975C /* DGDashBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGDashBoardViewController.h; path = SourceFile/Dashboard/Controller/DGDashBoardViewController.h; sourceTree = "<group>"; };
+		EAD25C1C1B4096DD00A8975C /* DGDashBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGDashBoardViewController.m; path = SourceFile/Dashboard/Controller/DGDashBoardViewController.m; sourceTree = "<group>"; };
+		EAD25C201B40998700A8975C /* DGDashBoardTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DGDashBoardTableCell.h; path = SourceFile/Dashboard/View/DGDashBoardTableCell.h; sourceTree = "<group>"; };
+		EAD25C211B40998700A8975C /* DGDashBoardTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DGDashBoardTableCell.m; path = SourceFile/Dashboard/View/DGDashBoardTableCell.m; sourceTree = "<group>"; };
 		F4562E682679A165A210D67A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +124,7 @@
 				25E40C491B3DA9DB0018A43F /* Products */,
 				8F1A605636831FF08CE938CF /* Pods */,
 				10A23566FB4CC137F3E90B10 /* Frameworks */,
+				EAD25C141B40943000A8975C /* DLWebServiceStructure copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +149,7 @@
 				EA6FED991B3EFCB700266C32 /* DataManager */,
 				25E40C4E1B3DA9DB0018A43F /* AppDelegate.h */,
 				25E40C4F1B3DA9DB0018A43F /* AppDelegate.m */,
+				EAD25C181B40969100A8975C /* Source */,
 				25E40C5A1B3DA9DC0018A43F /* Main.storyboard */,
 				25E40C5D1B3DA9DC0018A43F /* Assets.xcassets */,
 				25E40C5F1B3DA9DC0018A43F /* LaunchScreen.storyboard */,
@@ -246,6 +255,49 @@
 				EA6FEDAD1B3EFF1500266C32 /* configuration.plist */,
 			);
 			name = TargetOne;
+			sourceTree = "<group>";
+		};
+		EAD25C181B40969100A8975C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EAD25C191B40969E00A8975C /* Dashboard */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		EAD25C191B40969E00A8975C /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EAD25C1F1B40990E00A8975C /* Model */,
+				EAD25C1E1B40990500A8975C /* View */,
+				EAD25C1A1B4096AA00A8975C /* Controller */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		EAD25C1A1B4096AA00A8975C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAD25C1B1B4096DD00A8975C /* DGDashBoardViewController.h */,
+				EAD25C1C1B4096DD00A8975C /* DGDashBoardViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EAD25C1E1B40990500A8975C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAD25C201B40998700A8975C /* DGDashBoardTableCell.h */,
+				EAD25C211B40998700A8975C /* DGDashBoardTableCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EAD25C1F1B40990E00A8975C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD25C221B40998700A8975C /* DGDashBoardTableCell.m in Sources */,
 				25E40C531B3DA9DB0018A43F /* DLWebServiceStructure.xcdatamodeld in Sources */,
 				25E40C501B3DA9DB0018A43F /* AppDelegate.m in Sources */,
 				EA6FED9C1B3EFCD800266C32 /* DGRequestBuilder.m in Sources */,
@@ -422,6 +475,7 @@
 				EA6FEDA41B3EFD3D00266C32 /* DGSystemConfiguration.m in Sources */,
 				EA6FEDA81B3EFD9E00266C32 /* DGUtility.m in Sources */,
 				EA6FEDA01B3EFD0600266C32 /* DGRequestManager.m in Sources */,
+				EAD25C1D1B4096DD00A8975C /* DGDashBoardViewController.m in Sources */,
 				25E40C4D1B3DA9DB0018A43F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

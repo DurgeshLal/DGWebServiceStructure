@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A0R-Ms-Ho0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,24 +22,105 @@
             </objects>
             <point key="canvasLocation" x="-794" y="-491"/>
         </scene>
-        <!--View Controller-->
+        <!--Dash Board View Controller-->
         <scene sceneID="aK6-Z4-8eS">
             <objects>
-                <viewController id="tzG-qU-qp9" sceneMemberID="viewController">
+                <viewController id="tzG-qU-qp9" customClass="DGDashBoardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LuF-Im-o6s"/>
                         <viewControllerLayoutGuide type="bottom" id="8vg-Km-ELC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Nl-hu-lUm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yEx-DO-IAc">
+                                <rect key="frame" x="-4" y="64" width="383" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.47640753749917553" green="0.47795571220683941" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseID" rowHeight="50" id="fF3-2K-c6F" customClass="DGDashBoardTableCell">
+                                        <rect key="frame" x="0.0" y="86" width="383" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fF3-2K-c6F" id="BhE-2U-L3m">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RvP-MX-GMJ">
+                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcZ-r2-G6g">
+                                                    <rect key="frame" x="48" y="14" width="319" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.25082455072462395" blue="0.3010860782214122" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="wcZ-r2-G6g" firstAttribute="leading" secondItem="RvP-MX-GMJ" secondAttribute="trailing" constant="8" id="HgG-pg-uO1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wcZ-r2-G6g" secondAttribute="bottom" constant="6.5" id="LkT-ah-Mfk"/>
+                                                <constraint firstItem="RvP-MX-GMJ" firstAttribute="top" secondItem="BhE-2U-L3m" secondAttribute="topMargin" constant="2" id="Ot1-zB-Jaa"/>
+                                                <constraint firstItem="RvP-MX-GMJ" firstAttribute="leading" secondItem="BhE-2U-L3m" secondAttribute="leadingMargin" constant="2" id="RcJ-nY-njo"/>
+                                                <constraint firstItem="wcZ-r2-G6g" firstAttribute="top" secondItem="BhE-2U-L3m" secondAttribute="topMargin" constant="6" id="fai-PU-ryI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="RvP-MX-GMJ" secondAttribute="bottom" constant="1.5" id="oTx-9j-aeN"/>
+                                                <constraint firstItem="wcZ-r2-G6g" firstAttribute="trailing" secondItem="BhE-2U-L3m" secondAttribute="trailingMargin" id="xao-05-dQ7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgWeather" destination="RvP-MX-GMJ" id="dcv-iR-DUm"/>
+                                            <outlet property="lblWeather" destination="wcZ-r2-G6g" id="VaC-3u-7gS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tzG-qU-qp9" id="4C9-Dh-h5R"/>
+                                    <outlet property="delegate" destination="tzG-qU-qp9" id="8ln-E1-qrl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yEx-DO-IAc" firstAttribute="top" secondItem="LuF-Im-o6s" secondAttribute="bottom" id="547-pv-Dpe"/>
+                            <constraint firstItem="yEx-DO-IAc" firstAttribute="leading" secondItem="0Nl-hu-lUm" secondAttribute="leadingMargin" constant="-20" id="HOO-dY-REN"/>
+                            <constraint firstItem="8vg-Km-ELC" firstAttribute="top" secondItem="yEx-DO-IAc" secondAttribute="bottom" id="cEZ-RZ-rpH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yEx-DO-IAc" secondAttribute="trailing" constant="-20" id="wRP-cQ-0sa"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="erL-lb-t4X"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="erL-lb-t4X">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="veO-Qz-EaG">
+                            <connections>
+                                <action selector="clearButtonTapped:" destination="tzG-qU-qp9" id="2FV-bS-0CS"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="API" id="t8f-64-pdS">
+                                <connections>
+                                    <action selector="apiButtonTapped:" destination="tzG-qU-qp9" id="fkh-o7-uUx"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="JSON" id="kb3-82-fRN">
+                                <connections>
+                                    <action selector="jsonButtonTapped:" destination="tzG-qU-qp9" id="u72-gN-6Gw"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="XML" id="Nvm-ni-qou">
+                                <connections>
+                                    <action selector="xmlButtonTapped:" destination="tzG-qU-qp9" id="f7G-Sx-olU"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="yEx-DO-IAc" id="bxQ-4q-6Nj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgC-IG-90e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-540"/>
+            <point key="canvasLocation" x="357.5" y="-579.5"/>
         </scene>
     </scenes>
 </document>

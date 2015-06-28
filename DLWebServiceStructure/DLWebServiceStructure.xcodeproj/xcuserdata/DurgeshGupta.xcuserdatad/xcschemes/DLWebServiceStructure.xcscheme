@@ -28,26 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25E40C661B3DA9DC0018A43F"
-               BuildableName = "DLWebServiceStructureTests.xctest"
-               BlueprintName = "DLWebServiceStructureTests"
-               ReferencedContainer = "container:DLWebServiceStructure.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25E40C711B3DA9DC0018A43F"
-               BuildableName = "DLWebServiceStructureUITests.xctest"
-               BlueprintName = "DLWebServiceStructureUITests"
-               ReferencedContainer = "container:DLWebServiceStructure.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
